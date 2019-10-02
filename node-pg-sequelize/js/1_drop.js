@@ -12,3 +12,10 @@ async function dropTables(){
 }
 
 dropTables()
+
+
+/*
+CASCADE deleta todas as dependências/relacionamentos da tabela
+sem ele, tabelas que contém relacionamentos não são apagadas.
+
+*/
