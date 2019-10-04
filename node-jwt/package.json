@@ -1,16 +1,13 @@
 {
-  "name": "node-hapijs",
+  "name": "node-jwt",
   "version": "1.0.0",
-  "description": "Exemplo de API em Node.js usando Hapi.js",
+  "description": "Exemplo de API em Node.js usando JWT",
   "scripts": {
     "start": "npx babel-node src"
   },
   "dependencies": {
-    "@types/mongoose": "^5.5.19",
-    "boom": "^7.3.0",
-    "hapi": "^18.1.0",
-    "joi": "^14.3.1",
-    "mongoose": "^5.6.2"
+    "express": "^4.17.0",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
