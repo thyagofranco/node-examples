@@ -3,4 +3,4 @@ class PostController {
 
 }
 
-export defaul new PostController()
+export default new PostController()

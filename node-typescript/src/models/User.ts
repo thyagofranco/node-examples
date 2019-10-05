@@ -1,8 +1,10 @@
-import { Schema, model, Model } from 'mongoose'
+import { Schema, model, Model, Document } from 'mongoose'
 import { UserInterface } from '../interfaces/User'
 
 
+export interface UserModel extends UserInterface, Document {
 
+}
 const UserSchema = new Schema({
   firstName: String,
   lastName: String,
@@ -14,13 +16,7 @@ const UserSchema = new Schema({
   }
 }, {
     timestamps: { createdAt: true, updatedAt: true },
-    toJSON: { 
-        virtuals: true,
-        transform(doc, ret) {
-            ret.id = ret._id
-            delete ret._id
-          }
-    },
+    
     versionKey: false,
 })
 

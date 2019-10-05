@@ -1,12 +1,12 @@
 import { Router } from 'express'
 
 import UserController from './controllers/UserController'
-import PostController from './controllers/PostController'
+//import PostController from './controllers/PostController'
 
 const routes = Router()
 // User routes
 
-routes.get('/users/:id?', UserController.find)
+routes.get('/users/:id?', UserController.find)/*
 routes.post('/users', UserController.create)
 routes.put('/users/:id', UserController.update)
 routes.delete('/users:id', UserController.delete)
@@ -20,7 +20,7 @@ routes.post('/posts', PostController.create)
 routes.put('/posts/:id', PostController.update)
 routes.delete('/posts:id', PostController.delete)
 
-
+*/
 
 
 export default routes
